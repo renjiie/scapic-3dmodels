@@ -21,7 +21,7 @@ deleteAccount=(uid)=>{
 				   firebase.auth().signOut()
 				  } 
 				  else {
-				   		fetch('https://thawing-tundra-27417.herokuapp.com/deleteuser',{
+				   		fetch('http://localhost:3000/deleteuser',{
 							method:'delete',
 							headers: {'Content-Type' : 'application/json'},
 							body:JSON.stringify({

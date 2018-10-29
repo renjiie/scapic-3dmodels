@@ -19,7 +19,7 @@ class Register extends React.Component {
 		this.setState({name:event.target.value})
 	};
 	onSubmitSignin =()=>{
-		fetch('https://thawing-tundra-27417.herokuapp.com/register',{
+		fetch('https://scapic-models.herokuapp.com/register',{
 			method:'post',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({
@@ -30,6 +30,7 @@ class Register extends React.Component {
 		})
 		.then(response=>response.json())
 		.then(user=>{
+			console.log(user)
 			if(user.id){
 				
 				this.props.loadUser(user)
