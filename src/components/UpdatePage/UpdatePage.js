@@ -28,7 +28,7 @@ onSubmitUpdate=()=>{
 	 if (window.confirm('Are you sure you wish to UPDATE your Account?')) {
               
 	 	if(!(this.state.name.length===0&&this.state.email.length===0&&this.state.password.length===0)){
-		fetch('http://localhost:3000/update',{
+		fetch('https://scapic-models.herokuapp.com/update',{
 			method:'put',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({

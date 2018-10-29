@@ -21,7 +21,7 @@ deleteAccount=(uid)=>{
 				   firebase.auth().signOut()
 				  } 
 				  else {
-				   		fetch('http://localhost:3000/deleteuser',{
+				   		fetch('https://scapic-models.herokuapp.com/deleteuser',{
 							method:'delete',
 							headers: {'Content-Type' : 'application/json'},
 							body:JSON.stringify({
