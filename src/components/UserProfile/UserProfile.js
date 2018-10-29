@@ -21,7 +21,7 @@ deleteAccount=(uid)=>{
 				   firebase.auth().signOut()
 				  } 
 				  else {
-				   		fetch('https://fierce-spire-88497.herokuapp.com/deleteuser',{
+				   		fetch('https://enigmatic-wave-49414.herokuapp.com/deleteuser',{
 							method:'delete',
 							headers: {'Content-Type' : 'application/json'},
 							body:JSON.stringify({

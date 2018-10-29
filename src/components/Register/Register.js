@@ -19,9 +19,8 @@ class Register extends React.Component {
 		this.setState({name:event.target.value})
 	};
 	onSubmitSignin =()=>{
-		fetch('https://fierce-spire-88497.herokuapp.com/register',{
+		fetch('https://enigmatic-garden-85313.herokuapp.com/register',{
 			method:'post',
-			mode: 'no-cors',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({
 				'email':this.state.email,
@@ -38,7 +37,7 @@ class Register extends React.Component {
 				this.props.OnRouteChange('home')
 			}
 			else{
-				alert('User already registered or missed filling mandatory fields')
+				alert('User already registered or missed filling mandatory')
 			}
 		})
 		

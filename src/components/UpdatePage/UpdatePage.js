@@ -27,8 +27,8 @@ onNameChange =(event)=>{
 onSubmitUpdate=()=>{
 	 if (window.confirm('Are you sure you wish to UPDATE your Account?')) {
               
-	 	if(!(this.state.name&&this.state.email&&this.state.password)){
-		fetch('https://fierce-spire-88497.herokuapp.com/update',{
+	 	if(!(this.state.name.length===0&&this.state.email.length===0&&this.state.password.length===0)){
+		fetch('https://enigmatic-wave-49414.herokuapp.com/update',{
 			method:'put',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({
