@@ -19,7 +19,7 @@ class Register extends React.Component {
 		this.setState({name:event.target.value})
 	};
 	onSubmitSignin =()=>{
-		fetch('https://enigmatic-garden-85313.herokuapp.com/register',{
+		fetch('https://thawing-tundra-27417.herokuapp.com/register',{
 			method:'post',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({
