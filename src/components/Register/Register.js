@@ -21,6 +21,7 @@ class Register extends React.Component {
 	onSubmitSignin =()=>{
 		fetch('https://fierce-spire-88497.herokuapp.com/register',{
 			method:'post',
+			mode: 'no-cors',
 			headers: {'Content-Type' : 'application/json'},
 			body:JSON.stringify({
 				'email':this.state.email,
