@@ -23,7 +23,7 @@ class SocialLogin extends Component {
 
 onSubmitSignin =()=>{
   
-    fetch('http://localhost:3000/social',{
+    fetch('https://scapic-models.herokuapp.com/social',{
       method:'post',
       headers: {'Content-Type' : 'application/json'},
       body:JSON.stringify({
